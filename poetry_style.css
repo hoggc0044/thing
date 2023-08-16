@@ -1,0 +1,345 @@
+body{
+
+  color: rgb(0, 35, 102);
+
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+
+/* ---- Site Grid set up ---- */
+
+.wrapper{
+
+  display: grid;
+
+  grid-template-columns: 1fr 400px;
+
+  grid-template-rows: auto;
+
+  grid-template-areas:
+
+  "header header header"
+
+  "nav nav nav"
+
+  "main main aside"
+
+  "footer footer footer";
+
+  grid-gap: 4px
+
+}
+
+
+
+
+header {
+
+  grid-area: header;
+
+  background-color: #0074B7; /*Royal Blue*/
+
+  color: rgb(255,255,255);
+
+  font-family: 'Roboto', sans-serif;
+
+  height: 100px;
+
+  padding: 5;
+
+}
+
+
+
+
+nav {
+
+  grid-area:nav;
+
+  background-color: #60A3D9; /*Blue Grotto*/
+
+  color: rgb(255,255,255);
+
+  font-family: 'Raleway', sans-serif;
+
+  text-align: center;
+
+}
+
+
+
+
+main {
+
+  grid-area: main;
+
+  background-color: #BFD7ED; /*Baby Blue*/
+
+  color: rgb(88, 88, 88);
+
+  font-family: 'Raleway', sans-serif;
+
+  padding:20px;
+
+  border-radius: 10px;
+
+}
+
+
+
+
+aside {
+
+  grid-area: aside;
+
+  background-color: #60A3D9; /*Blue Grotto*/
+
+  color: rgb(255,255,255);
+
+  font-family: 'Raleway', sans-serif;
+
+  text-align: center;
+
+  padding:20px;
+
+  border-radius: 10px;
+
+}
+
+
+
+
+footer {
+
+  grid-area: footer;
+
+  background-color: rgb(0, 48, 97); /*Navy*/
+
+  color: rgb(255,255,255);
+
+  font-family: 'Roboto', sans-serif;
+
+  text-align: right;
+
+ 
+
+}
+
+/* ---- Grid image setup ---- */
+.homeimages{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "free haiku"
+        "limerick acrostic";
+    grid-gap: 4px;
+
+    width: 520px;
+    margin: auto;
+    padding: 5px;
+}
+.free{grid-area: free;}
+.haiku{grid-area: haiku;}
+.limerick{grid-area: limerick;}
+.acrostic{grid-area: acrostic;}
+
+/* ---- General Formatting ---- */
+
+
+
+
+
+.box{
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+}
+
+
+
+
+h1{
+
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 300%;
+
+
+
+
+/* -- tRANSFORM something or another to vertically centre the heading so it is uh centre */
+
+padding-left: 120px;
+
+
+
+
+
+
+}
+
+
+
+
+img.roundleft{
+
+border-top-left-radius: 10px;
+
+border-bottom-left-radius: 10px;
+
+border-top-right-radius: 10px;
+
+border-bottom-right-radius: 10px;
+
+float: left;
+box-shadow: 10px 10px 10px rgb(0, 0, 0);
+
+}
+
+
+.allround{
+  border-radius: 20px;
+  box-shadow: 1px 0px 10px;
+}
+
+
+
+/* ---- Drop Down Menu ---- */
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+
+  /*  background-color: #4CAF50; */
+
+    background-color: #0074B7;   /* Royal Blue */
+
+    color: white;
+
+    padding: 16px;
+
+    font-size: 16px;
+
+    border: none;
+
+    cursor: crosshair;
+
+  }
+
+ 
+
+
+
+  /* The container <div> - needed to position the dropdown content */
+
+  .dropdown {
+
+    position: relative;
+
+    display: inline-block;
+
+    border-radius: 5px;
+
+  }
+
+ 
+
+  /* Dropdown Content (Hidden by Default) */
+
+  /* Customised from https://www.w3schools.com/css/css_dropdowns.asp */
+
+ 
+
+  .littlearrow {
+
+    font-size: 50%;
+
+  }
+
+
+
+
+
+
+
+
+  .littlearrow {
+
+      font-size: 75%;
+
+  }
+
+ 
+
+  .dropdown-content {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: #0074B7;    /* Royal Blue*/
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    z-index: 1;
+
+    color: aliceblue;
+
+  }
+
+ 
+
+  /* Links inside the dropdown */
+
+  .dropdown-content a {
+
+    color: aliceblue;
+
+    padding: 12px 16px;
+
+    text-decoration: none;
+
+    display: block;
+
+  }
+
+ 
+
+  /* Change color of dropdown links on hover */
+
+  .dropdown-content a:hover {background-color: rgb(0, 48, 97)}   /* Navy */
+
+ 
+
+  /* Show the dropdown menu on hover */
+
+  .dropdown:hover .dropdown-content {
+
+    display: block;
+
+  }
+
+  /* googlys forms stylying */
+  iframe {
+    width: 85%;
+    height: 750px;
+    margin: auto;
+    border: 0;
+  }
+ 
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+  /* .dropdown:hover .dropbtn {
+
+    background-color: #3e8e41;
+
+  } */
